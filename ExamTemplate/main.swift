@@ -69,11 +69,36 @@ var angle3 = getAngle(with: "Angle 3? ")
  
  */
 
-// Add 'process' code below....
-print("provided angles are")
-print(angle1)
-print(angle2)
-print(angle3)
+// Initialize the result variable
+var result = ""
+
+// Do we have a valid triangle?
+if angle1 + angle2 + angle3 == 180 {
+    
+    // Yes, now classify
+    if angle1 == angle2 && angle2 == angle3 {
+        
+        result = "Equilateral"
+        
+    } else {
+        
+        if angle1 == angle2 || angle2 == angle3 || angle1 == angle3 {
+            
+            result = "Isosceles"
+            
+        } else {
+            
+            // Only other option is...
+            result = "Scalene"
+        }
+        
+    }
+    
+} else {
+    
+    // No
+    result = "Error"
+}
 
 
 /*
@@ -85,5 +110,5 @@ print(angle3)
  Make use of your test plan and algorithm to ensure your code is complete.
  
  */
-
+print(result)
 
