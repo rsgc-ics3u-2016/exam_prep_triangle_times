@@ -19,31 +19,45 @@ import Foundation
  Make use of your test plan and algorithm to ensure your code is complete.
  
  */
-var inputToProcess : String = ""
-
-// Loop until valid input is received
-while inputToProcess == "" {
+func getAngle(with prompt : String) -> Int {
     
-    // Show the prompt
-    print("Ask the question here? ", terminator: "")
+    var angle : Int = Int.max
     
-    // Get the user's input
-    var input : String?
-    input = readLine()
-    
-    // Use optional binding to see if the string can be unwrapped (to see if it is not nil)
-    if let notNilInput = input {
+    // Loop until valid input is received
+    while angle == Int.max {
         
-        // You probably need to add additional checks to be sure the
-        // input received is valid
-        // Add checks as needed...
+        // Show the prompt
+        print(prompt, terminator: "")
         
-        // Save the input given, as we are certain it's what we are looking for now
-        inputToProcess = notNilInput
+        // Get the user's input
+        var input : String?
+        input = readLine()
+        
+        // Use optional binding to see if the string can be unwrapped (to see if it is not nil)
+        if let notNilInput = input {
+            
+            // Try to get an integer from the provided String
+            if let integerInput = Int(notNilInput) {
+                
+                // Check that value is in the provided range
+                if integerInput >= 1 && integerInput <= 178 {
+                    angle = integerInput
+                }
+                
+            }
+            
+            
+        }
         
     }
     
+    return angle
 }
+
+// Get the three values
+var angle1 = getAngle(with: "Angle 1? ")
+var angle2 = getAngle(with: "Angle 2? ")
+var angle3 = getAngle(with: "Angle 3? ")
 
 /*
  
@@ -56,7 +70,10 @@ while inputToProcess == "" {
  */
 
 // Add 'process' code below....
-print("replace with process logic")
+print("provided angles are")
+print(angle1)
+print(angle2)
+print(angle3)
 
 
 /*
@@ -69,6 +86,4 @@ print("replace with process logic")
  
  */
 
-// Add 'output' code below... replace what is here as needed.
-print("The input given was: \(inputToProcess)")
 
