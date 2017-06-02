@@ -23,10 +23,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		815565EC1EE1E9B600DA8944 /* A Warmup - 1 - Triangle Times - Algorithm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "A Warmup - 1 - Triangle Times - Algorithm.pdf"; sourceTree = "<group>"; };
+		815565ED1EE1E9B600DA8944 /* A Warmup - 1 - Triangle Times - Test Plan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "A Warmup - 1 - Triangle Times - Test Plan.pdf"; sourceTree = "<group>"; };
 		817AC2C71EC0A59C008A7B44 /* ExamTemplate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExamTemplate; sourceTree = BUILT_PRODUCTS_DIR; };
 		817AC2CA1EC0A59C008A7B44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		817AC2D21EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times - Algorithm.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Warmup - 1 - Triangle Times - Algorithm.docx"; sourceTree = "<group>"; };
-		817AC2D31EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times - Test Plan.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Warmup - 1 - Triangle Times - Test Plan.docx"; sourceTree = "<group>"; };
 		817AC2D41EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "A Warmup - 1 - Triangle Times.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +69,8 @@
 		817AC2D11EC0A5F9008A7B44 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				817AC2D21EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times - Algorithm.docx */,
-				817AC2D31EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times - Test Plan.docx */,
+				815565EC1EE1E9B600DA8944 /* A Warmup - 1 - Triangle Times - Algorithm.pdf */,
+				815565ED1EE1E9B600DA8944 /* A Warmup - 1 - Triangle Times - Test Plan.pdf */,
 				817AC2D41EC0A60B008A7B44 /* A Warmup - 1 - Triangle Times.pdf */,
 			);
 			name = Documents;
@@ -271,6 +271,7 @@
 				817AC2D01EC0A59C008A7B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
